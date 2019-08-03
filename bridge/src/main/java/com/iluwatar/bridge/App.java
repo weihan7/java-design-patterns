@@ -39,7 +39,7 @@ import org.slf4j.LoggerFactory;
  * 
  */
 public class App {
-
+//测试使用git
   private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
 
   /**
