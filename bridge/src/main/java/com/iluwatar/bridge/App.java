@@ -48,6 +48,8 @@ public class App {
    * @param args command line args
    */
   public static void main(String[] args) {
+
+    System.out.println("----测试-----");
     LOGGER.info("The knight receives an enchanted sword.");
     Sword enchantedSword = new Sword(new SoulEatingEnchantment());
     enchantedSword.wield();
