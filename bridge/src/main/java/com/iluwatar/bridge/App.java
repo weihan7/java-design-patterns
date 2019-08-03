@@ -38,6 +38,7 @@ import org.slf4j.LoggerFactory;
  * combine any weapon with any enchantment using composition instead of creating deep class hierarchy.
  * 
  */
+//主方法
 public class App {
 //测试使用git
   private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
