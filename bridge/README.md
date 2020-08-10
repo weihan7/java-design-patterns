@@ -5,9 +5,7 @@ folder: bridge
 permalink: /patterns/bridge/
 categories: Structural
 tags:
- - Java
- - Gang Of Four
- - Difficulty-Intermediate
+ - Gang of Four
 ---
 
 ## Also known as
@@ -156,7 +154,7 @@ public class SoulEatingEnchantment implements Enchantment {
 And both the hierarchies in action
 
 ```java
-Sword enchantedSword = new Sword(new SoulEatingEnchantment());
+var enchantedSword = new Sword(new SoulEatingEnchantment());
 enchantedSword.wield();
 enchantedSword.swing();
 enchantedSword.unwield();
@@ -167,7 +165,7 @@ enchantedSword.unwield();
 // The sword is unwielded.
 // Bloodlust slowly disappears.
 
-Hammer hammer = new Hammer(new FlyingEnchantment());
+var hammer = new Hammer(new FlyingEnchantment());
 hammer.wield();
 hammer.swing();
 hammer.unwield();
@@ -178,6 +176,9 @@ hammer.unwield();
 // The hammer is unwielded.
 // The item's glow fades.
 ```
+
+## Class diagram
+![alt text](./etc/bridge.urm.png "Bridge class diagram")
 
 ## Applicability
 Use the Bridge pattern when
@@ -193,4 +194,5 @@ Use the Bridge pattern when
 
 ## Credits
 
-* [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
+* [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/gp/product/0201633612/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0201633612&linkCode=as2&tag=javadesignpat-20&linkId=675d49790ce11db99d90bde47f1aeb59)
+* [Head First Design Patterns: A Brain-Friendly Guide](https://www.amazon.com/gp/product/0596007124/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0596007124&linkCode=as2&tag=javadesignpat-20&linkId=6b8b6eea86021af6c8e3cd3fc382cb5b)
